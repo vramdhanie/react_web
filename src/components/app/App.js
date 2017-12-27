@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
-
-import Markdown from '../Markdown/markdown';
+import Footer from '../../shared/footer';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        The main app
-
-        <Markdown text="**Bold** and _italic_"/>
-
+        <Footer>
+          &copy; Vincent Ramdhanie
+        </Footer>
       </div>
     );
   }
