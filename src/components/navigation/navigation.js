@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 const Container = styled.nav`
   background-color: ${colours.PRIMARY_COLOUR_DARK};
+  height: 5vh;
 `;
 
 export class Navigation extends Component{

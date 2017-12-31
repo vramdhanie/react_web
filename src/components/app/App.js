@@ -4,6 +4,7 @@ import Header from '../header/header';
 import styled from 'styled-components';
 import bg1 from '../../assets/bg1.png';
 import bg2 from '../../assets/bg2.png';
+import Card from '../card/card';
 
 const Wrapper = styled.div`
   overflow-x: visible;
@@ -25,7 +26,7 @@ const ImageSection = Section.extend`
    background-size: cover;
    color: #FFFFFF;
    font-size:3em;
-   text-shadow: aliceblue;
+   text-shadow: 0 0 3px black;
 `;
 
 
@@ -40,7 +41,7 @@ class App extends Component {
         <Header/>
         <Main>
           <Section>
-            The first section
+            <Card border_colour="#860000" raised={true}>The first card</Card>
           </Section>
           <ImageSection background = {bg1}>
             This is a parallax section
