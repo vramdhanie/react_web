@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import bg1 from '../../assets/bg1.png';
 import bg2 from '../../assets/bg2.png';
 import Card from '../card/card';
+import CardHeader from '../card/card.header';
 
 const Wrapper = styled.div`
   overflow-x: visible;
@@ -41,7 +42,12 @@ class App extends Component {
         <Header/>
         <Main>
           <Section>
-            <Card border_colour="#860000" raised={true}>The first card</Card>
+            <Card raised={true}>
+              <CardHeader>
+                First
+              </CardHeader>
+                Card Body
+            </Card>
           </Section>
           <ImageSection background = {bg1}>
             This is a parallax section
