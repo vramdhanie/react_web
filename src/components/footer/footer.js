@@ -12,6 +12,7 @@ const FooterWrapper = styled.footer`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding:2px;
 `;
 
 const IconWrapper =  styled.div`
@@ -19,14 +20,23 @@ const IconWrapper =  styled.div`
   justify-content: space-between;
   align-items: center;
   width:33.3%;
+  flex:1;
 `
+
+const CopyWrapper = styled.div`
+  flex: 1;
+`;
+
+const NameWrapper = styled.div`
+  flex: 1;
+`;
 
 export class Footer extends Component{
   render(){
     return (
         <FooterWrapper>
-          <div>A</div>
-          <div>&copy; 2018 Vincent Ramdhanie</div>
+          <NameWrapper>A</NameWrapper>
+          <CopyWrapper>&copy; 2018 Vincent Ramdhanie</CopyWrapper>
           <IconWrapper>
             <FontAwesome name="twitter" size="2x"/>
             <FontAwesome name="facebook" size="2x"/>
