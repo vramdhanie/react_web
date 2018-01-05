@@ -6,6 +6,7 @@ import Home from '../home/home';
 import Articles from '../articles/articles';
 import Navigation from '../navigation/navigation';
 
+
 import {
   BrowserRouter as Router,
   Route
@@ -35,9 +36,7 @@ class App extends Component {
               <Route path="/articles" component={Articles}/>
             </Main>
           </Wrapper>
-           <Footer key="2">
-            &copy; Vincent Ramdhanie
-           </Footer>
+           <Footer/>
           </div>
         </Router>
     );

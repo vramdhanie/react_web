@@ -19,7 +19,7 @@ export class Markdown extends Component {
 }
 
 Markdown.propTypes = {
-    text: PropTypes.String
+    text: PropTypes.string
 };
 
 Markdown.defaultProps = {
