@@ -17,28 +17,39 @@ const Wrapper = styled.div`
   overflow-y:auto;
   display: flex;
   flex-direction: column;
+  flex: 1 1 auto;
 `;
 
 const Main = styled.main`
-  flex: 1 0 auto;
+  flex: 1 1 auto;
+`;
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 `;
 
 class App extends Component {
   render() {
     return (
-        <Router>
-          <div>
-          <Wrapper key="1">
-            <Navigation/>
-            <Route exact path="/" component={Header}/>
-            <Main>
-              <Route exact path="/" component={Home}/>
-              <Route path="/articles" component={Articles}/>
-            </Main>
-          </Wrapper>
+
+          <Container>
+
+            <Router>
+              <Wrapper key="1">
+              <Navigation/>
+              <Route exact path="/" component={Header}/>
+              <Main>
+                <Route exact path="/" component={Home}/>
+                <Route path="/articles" component={Articles}/>
+              </Main>
+              </Wrapper>
+            </Router>
+
            <Footer/>
-          </div>
-        </Router>
+          </Container>
+
     );
   }
 }

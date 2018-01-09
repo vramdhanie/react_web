@@ -7,8 +7,6 @@ const FooterWrapper = styled.footer`
   background-color: ${colours.PRIMARY_COLOUR};
   color: ${colours.PRIMARY_COLOUR_TEXT};
   height:10vh;
-  flex: 1 0 auto;
-  flex-shrink: 0;  
   display: flex;
   justify-content: space-around;
   align-items: center;
